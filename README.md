@@ -2,7 +2,10 @@
 
 ## Installing
 
-- ` curl https://raw.githubusercontent.com/MartimVideira/dotfiles/main/install.sh | /bin/bash`
+Just run:
+```console
+$ curl https://raw.githubusercontent.com/MartimVideira/dotfiles/main/install.sh | /bin/bash
+```
 
 ### Sources:
 - [Dotfiles with a Bare Repository](https://www.atlassian.com/git/tutorials/dotfiles)
