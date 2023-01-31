@@ -10,10 +10,12 @@ function mvp {
     local source=$1
     local destination=$2
     #echo "Moving" $1 " to " $2
-    mv $source $destination > /dev/null 2>$1
+    mv $source $destination &> /dev/null
     if [ $? = 1 ]; then
-        dirname $destination | xargs -I{} mkdir -p {}; mv -v $source $destination
-    fi;
+        dirname $destination | xargs -I{} mkdir -p {}
+	    mv  $source $destination
+    fi
+
 }
 export -f mvp
 mkdir -p .config-backup
