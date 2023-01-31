@@ -1,0 +1,29 @@
+{
+    "mitram790": {
+        "profile": "Profile 1",
+        "pages": [
+            {
+                "workspace": 3,
+                "urls" : ["file:///home/martim/Desktop/todo.md"]
+            },
+            {
+                "workspace": 8,
+                "urls": [
+                    "https://www.whatsapp.com/"
+                ]
+            }
+        ]
+    },
+    "bear": {
+        "profile": "Profile 4",
+        "pages": [
+            {
+                "workspace": 9,
+                "urls": [
+                    "https://www.youtube.com/",
+                    "https://open.spotify.com/"
+                ]
+            }
+        ]
+    }
+}

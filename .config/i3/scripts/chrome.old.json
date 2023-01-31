@@ -1,0 +1,41 @@
+{
+    "mitram790": {
+        "profile": "Profile 1",
+        "pages":[
+            {
+                "workspace":3
+            },
+            {
+                "workspace":8,
+                "url":"https://www.whatsapp.com/"
+            }
+        ]
+    },
+    "gUp": {
+        "profile": "Profile 3",
+        "pages":[
+            {
+                "workspace":5,
+                "url":null
+            }
+        ]
+    },
+    "mvideira": {
+        "profile": "Profile 5",
+        "pages":[
+            {
+                "workspace":5,
+                "url":null
+            }
+        ]
+    },
+    "bear": {
+        "profile": "Profile 4",
+        "pages":[
+            {
+                "workspace":5,
+                "url":null
+            }
+        ]
+    }
+}
