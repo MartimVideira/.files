@@ -9,11 +9,10 @@ function config {
 function mvp {
     local source=$1
     local destination=$2
+    #echo "Moving" $1 " to " $2
     mv $source $destination > /dev/null 2>$1
     if [ $? = 1 ]; then
-        echo "Inside if"
-        dirname $destination | xargs -I{} mkdir -p {}; mv $source $destination
-        echo "Created Directories"
+        dirname $destination | xargs -I{} mkdir -p {}; mv -v $source $destination
     fi;
 }
 export -f mvp
