@@ -4,7 +4,7 @@
 
 Just run:
 ```console
-$ curl https://raw.githubusercontent.com/MartimVideira/dotfiles/main/install.sh | /bin/bash
+curl https://raw.githubusercontent.com/MartimVideira/dotfiles/main/install.sh | /bin/bash
 ```
 
 ### Sources:
