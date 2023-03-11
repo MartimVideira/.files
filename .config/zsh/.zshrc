@@ -25,6 +25,7 @@ if [[ ! -d $HISTDIR ]]; then
 fi
 
 # Load Aliases?
+alias horario="feh ~/Desktop/horario.jpeg"
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -93,3 +94,10 @@ alias sshlogin=". ~/sshConnect.sh"
 # Load syntax highlighting; should be last.
 source  /usr/share/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias config='/usr/bin/git --git-dir=/home/martim/.dotfiles/ --work-tree=/home/martim'
+source "/etc/profile.d/rvm.sh"
+
+
+JAVA_HOME=$(dirname $( readlink -f $(which java) ))
+JAVA_HOME=$(realpath "$JAVA_HOME"/../)
+export JAVA_HOME
+source /etc/profile.d/gradle.sh
