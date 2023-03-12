@@ -15,10 +15,10 @@ hide_edge_borders both
 
 for_window [class="^.*"] border pixel 2 
 gaps inner 5
-gaps outer 5
+gaps outer 1
 
 # Don't show window's title bar 
-new_window 1pixel
+new_window pixel 1
 
 
 #workspace_layout stacking
@@ -202,14 +202,18 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status
-}
+# bar {
+#         status_command i3status
+# }
+# polybar
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+# bindsym $mod+b exec --no-startup-id ~/.config/polybar/theos/toggle.sh
+# bindsym $mod+Ctrl+b exec ~/.config/polybar/theos/toggle.sh --show-all
+
 # Binding For Locking the Screen https://github.com/guimeira/i3lock-fancy-multimonitor 
 bindsym $mod+shift+x exec ~/.config/i3/i3lock-fancy-multimonitor/lock -p -n
-# Execute Always for easy of change the walpaper whenever restars i3
-exec_always feh --bg-center ~/wallpaper/lor-restored-sun-disk.jpg
-#exec_always xrandr --output eDP --scale 1.0x1.0 
+
+# exec_always xrandr --output eDP --scale 1.0x1.0 
 exec_always xrandr --output eDP --scale 0.90x0.90
 
 
@@ -295,4 +299,5 @@ bindsym Print exec --no-startup-id gnome-screenshot -i
 #assing [class="code"] $ws0
 
 exec_always python3 ~/.config/i3/scripts/chrome.py 
-exec_always --no-startup-id picom &
+exec feh --bg-scale ~/Desktop/wallhaven-yxq9xl.png
+exec --no-startup-id picom -b
